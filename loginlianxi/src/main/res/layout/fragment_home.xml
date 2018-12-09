@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ccff">
+<com.youth.banner.Banner
+    android:id="@+id/banner"
+    android:layout_width="0dp"
+    android:layout_height="200dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    ></com.youth.banner.Banner>
+    <TextView
+        android:id="@+id/text"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:text="陈少帅陈少帅陈少帅陈少帅陈少帅陈少帅陈少帅陈少帅"
+        android:background="@color/colorAccent"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        app:layout_constraintTop_toBottomOf="@id/banner"
+        android:focusable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+   <com.example.xlistview.me.maxwin.view.XListView
+       android:id="@+id/xListView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@id/text"
+       ></com.example.xlistview.me.maxwin.view.XListView>
+
+</android.support.constraint.ConstraintLayout>
